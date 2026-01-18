@@ -97,28 +97,22 @@
     # Other
     fastfetch
     bat
-
-    # Basic Packages
     wget
-
-    # GCC & GDB
-    gcc
-    libgcc
-    gdb
+    tree
 
     # Git
     git
 
     # Coding
     neovim
-    nixd
-
+    
     # Desktop Utilties
     xclip
     wl-clipboard
     alacritty
     feh
     picom
+    flameshot
   ];
 
   environment.variables = {
