@@ -23,7 +23,7 @@
     settings = {
       user = {
         name = "Nothing";
-	email = "173809041+nothingfr87@users.noreply.github.com";
+	      email = "173809041+nothingfr87@users.noreply.github.com";
       };
     };
   };

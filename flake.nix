@@ -13,7 +13,7 @@
           home-manager.nixosModules.home-manager
           {
 	    home-manager = {
-              useGlobalPkgs = true;
+        useGlobalPkgs = true;
 	      useUserPackages = true;
 	      users.nothing = import ./home.nix;
 	      backupFileExtension = "backup";

@@ -94,20 +94,38 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    # Other
     fastfetch
+    bat
+
+    # Basic Packages
     wget
+
+    # GCC & GDB
     gcc
     libgcc
     gdb
+
+    # Git
     git
-    bat
+
+    # Coding
     neovim
+    nixd
+
+    # Desktop Utilties
     xclip
     wl-clipboard
     alacritty
     feh
     picom
   ];
+
+  environment.variables = {
+    SUDO_EDITOR="nvim";
+    EDITOR="nvim";
+    VISUAL="nvim";
+  };
 
   # Font Packages
   fonts.packages = with pkgs; [
