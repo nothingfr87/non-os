@@ -14,11 +14,12 @@
     clang-tools
     lua-language-server
     vscode-langservers-extracted
-    nixd
+    nil
     nixpkgs-fmt
     # Languages Compilers & Interpreters
     lua
     nodejs
+    python3
     typescript
     gcc
     libgcc
