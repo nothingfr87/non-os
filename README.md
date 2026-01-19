@@ -6,7 +6,10 @@ NON-OS is my NixOS Configurations
 
 # Preview
 
-![Preview](./preview.png)
+![Preview](./preview2.png)
+![Preview](./preview3.png)
+![Preview](./preview4.png)
+
 
 ---
 
@@ -36,8 +39,6 @@ I use these packages so make sure that you have it installed
 - i3
 - i3bar
 - i3status
-
-(I will switch soon to hyprland, so stay tuned)
 
 #### Terminal
 - Alacritty

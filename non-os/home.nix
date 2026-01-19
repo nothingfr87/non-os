@@ -37,13 +37,20 @@
     fzf
     bat
     btop
+    pywal16
+    imagemagick
+    lxappearance
+    pywalfox-native
   ];
 
   # Vesktop
   programs.vesktop.enable = true;
 
   # Firefox
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    nativeMessagingHosts = [ pkgs.pywalfox-native ];
+  };
 
   # Bash
   programs.bash = {
@@ -127,40 +134,17 @@
         bold.family = "JetBrainsMono NF";
         italic.family = "JetBrainsMono NF";
       };
-      colors = {
-        bright = {
-          black = "#444b6a";
-          blue = "#7da6ff";
-          cyan = "#0db9d7";
-          green = "#b9f27c";
-          magenta = "#bb9af7";
-          red = "#ff7a93";
-          white = "#acb0d0";
-          yellow = "#ff9e64";
-        };
-        normal = {
-          black = "#32344a";
-          blue = "#7aa2f7";
-          cyan = "#449dab";
-          green = "#9ece6a";
-          magenta = "#ad8ee6";
-          red = "#f7768e";
-          white = "#787c99";
-          yellow = "#e0af68";
-        };
-        primary = {
-          background = "#1a1b26";
-          foreground = "#a9b1d6";
-        };
-      };
+      general.import = [ "~/.cache/wal/colors-alacritty.toml" ];
     };
   };
 
   # i3status
   programs.i3status = {
     enable = true;
+    enableDefault = false;
     general = {
       interval = 1;
+      colors = true;
     };
     modules = {
       "tztime local" = {

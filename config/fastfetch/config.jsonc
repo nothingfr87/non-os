@@ -1,100 +1,102 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "~/.config/fastfetch/NixOS2.png",
-    "width": 32,
-    "height": 15,
+    "source": "~/.config/fastfetch/other-configs/nitch/nitch.txt",
+    "type": "none",
+    "width": 1,
+    "position": "top",
+    "height": 1,
     "padding": {
       "top": 0,
-      "left": 1
+      "left": 0
     }
   },
   "display": {
-    "separator": "  󰨐  "
+    "separator": " "
   },
   "modules": [
+    {
+      "key": "   _  ___      ____  ____\n  / |/ (_)_ __/ __ \\/ __/\n /    / /\\ \\ / /_/ /\\ \\  \n/_/|_/_//_\\_\\\\____/___/ ",
+      "keyColor": "36;1",
+      "type": "custom",
+    },
     "break",
     {
+      "key": "  ╭───────────╮",
+      "keyColor": "1;1",
+      "type": "custom"
+    },
+    {
+      "key": "  {#39}│ {#31}  {#39}user   {#39}│",
       "keyColor": "31;1",
       "outputColor": "31;1",
       "type": "title",
-      "format": "{user-name} 󱄅 {host-name}"
+      "format": "{user-name}"
     },
-    "break",
     {
-      "key": "{icon} Distro  ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
+      "key": "  {#39}│ {#33}  {#39}hname  {#39}│",
+      "keyColor": "33;1",
+      "outputColor": "33;1",
+      "type": "title",
+      "format": "{host-name}"
+    },
+    {
+      "key": "  {#39}│ {#32}󰻀  {#39}distro {#39}│",
+      "keyColor": "32;1",
+      "outputColor": "32;1",
       "type": "os",
       "format": "{3}"
     },
-
     {
-      "key": "󰅐 Uptime  ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
-      "type": "uptime"
-    },
-    {
-      "type": "command",
-      "key": "󰃭 OS Age  ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
-      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
-    },
-    {
-      "key": " Kernel  ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
+      "key": "  {#39}│ {#36}󰌢  {#39}kernel {#39}│",
+      "keyColor": "36;1",
+      "outputColor": "36;1",
       "type": "kernel",
-      "format": "{1} {2}"
+      "format": "{2}"
     },
     {
-      "key": " Packages",
+      "key": "  {#39}│ {#34}󰅐  {#39}uptime {#39}│",
       "keyColor": "34;1",
-      "outputColor": "1;1",
+      "outputColor": "34;1",
+      "type": "uptime",
+      "format": "{2}h {3}m"
+    },
+    {
+      "key": "  {#39}│ {#35}  {#39}shell  {#39}│",
+      "keyColor": "35;1",
+      "outputColor": "35;1",
+      "type": "shell",
+      "format": "{1}"
+    },
+    {
+      "key": "  {#39}│ {#31}󰏖  {#39}Pkgs   {#39}│",
+      "keyColor": "31;1",
+      "outputColor": "31;1",
       "type": "packages",
       "format": "{1}"
     },
     {
-      "key": "󰇄 DE      ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
-      "type": "de",
-      "format": "{1} {5}"
-    },
-    {
-      "key": "󰖲 WM      ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
-      "type": "wm",
-      "format": "{1} {5}"
-    },
-    {
-      "key": " Terminal",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
-      "type": "terminal",
-      "format": "{1} {6}"
-    },
-    {
-      "key": " Shell   ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
-      "type": "shell",
-      "format": "{1} {4}"
-    },
-    {
-      "key": " Memory  ",
-      "keyColor": "34;1",
-      "outputColor": "1;1",
+      "key": "  {#39}│ {#33}󰍛  {#39}memory {#39}│",
+      "keyColor": "33;1",
+      "outputColor": "33;1",
       "type": "memory",
-      "format": "{1}  {2}"
+      "format": "{1} | {2}"
     },
-    "break",
     {
+      "key": "  ├───────────┤",
+      "keyColor": "1;1",
+      "type": "custom"
+    },
+    {
+      "key": "  {#39}│ {#39}  {#39}colors {#39}│",
+      "keyColor": "1;1",
       "type": "colors",
       "symbol": "circle"
     },
+    {
+      "key": "  ╰───────────╯",
+      "keyColor": "1;1",
+      "type": "custom"
+    }
   ]
 }

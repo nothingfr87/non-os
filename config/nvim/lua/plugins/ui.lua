@@ -8,6 +8,8 @@ return {
 			style = "night",
 		},
 	},
+	-- Pywal
+	{ "AlphaTechnolog/pywal.nvim" },
 	-- Indentation Guide Lines
 	{
 		"nvim-mini/mini.indentscope",

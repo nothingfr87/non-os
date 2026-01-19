@@ -34,7 +34,7 @@ vim.diagnostic.config({ virtual_text = true })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bold = true })
 
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
-  link = "NonText",
+	link = "NonText",
 })
 
 cmd("cnoreabbrev q q!")
@@ -52,8 +52,8 @@ require("config.mappings")
 
 -- Set Theme
 local function transparent()
-  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 end
 
-cmd("colorscheme tokyonight")
+cmd("colorscheme pywal")
 transparent()
