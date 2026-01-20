@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -49,18 +54,14 @@
   services.dbus.enable = true;
   security.polkit.enable = true;
 
+  # Install LightDM
+  services.xserver.displayManager.lightdm.enable = true;
+
   # Enable the Cinnamon Desktop Environment.
-  services.displayManager.ly.enable = true;
   services.xserver.desktopManager.cinnamon.enable = true;
 
   # Enable i3 Window Manager
-  services.xserver.windowManager.i3 = {
-    enable = true;
-    extraPackages = with pkgs; [
-      dmenu
-      i3status
-    ];
-  };
+  services.xserver.windowManager.i3.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -116,6 +117,7 @@
     git
     xclip
     wl-clipboard
+    inputs.matugen.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # Font Packages
@@ -126,5 +128,12 @@
     nerd-fonts.jetbrains-mono
     font-awesome
   ];
+
+  fonts.fontconfig = {
+    defaultFonts = {
+      monospace = "JetBrainsMono Nerd Font";
+    };
+  };
+
   system.stateVersion = "25.11";
 }
