@@ -130,7 +130,6 @@
     noto-fonts-color-emoji
     nerd-fonts.jetbrains-mono
     font-awesome
-    google-fonts
   ];
 
   fonts.fontconfig = {
