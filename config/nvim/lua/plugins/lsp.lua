@@ -4,14 +4,22 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
-			servers = { "nil", "pyright", "clangd", "ts_ls", "html", "cssls", "emmet_ls" }
+
+			local servers = {
+				"nil",
+				"pyright",
+				"clangd",
+				"ts_ls",
+				"html",
+				"cssls",
+				"emmet_ls",
+			}
 
 			for _, lsp in ipairs(servers) do
 				vim.lsp.config(lsp, {
 					capabilities = capabilities,
 				})
 			end
-			vim.lsp.enable(servers)
 
 			-- Fixed lua_ls autoattach
 			vim.api.nvim_create_autocmd("VimEnter", {
@@ -21,6 +29,8 @@ return {
 					end
 				end,
 			})
+
+			vim.lsp.enable(servers)
 		end,
 	},
 
@@ -74,9 +84,6 @@ return {
 					javascript = { "prettier" },
 					nix = { "nixfmt" },
 				},
-			})
-
-			require("conform").setup({
 				format_on_save = {
 					timeout_ms = 1000,
 					lsp_format = "fallback",

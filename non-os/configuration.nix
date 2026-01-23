@@ -121,7 +121,6 @@
     xclip
     wl-clipboard
     pavucontrol
-    inputs.matugen.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # Font Packages
@@ -131,6 +130,7 @@
     noto-fonts-color-emoji
     nerd-fonts.jetbrains-mono
     font-awesome
+    google-fonts
   ];
 
   fonts.fontconfig = {

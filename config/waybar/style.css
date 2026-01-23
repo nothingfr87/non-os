@@ -1,4 +1,4 @@
-/*@import url("/home/nothing/.cache/wal/colors-waybar.css");*/ /* Uncomment this to use pywal, and change to your username */
+/* @import "./colors.css"; */
 @import "./tokyonight.css";
 
 * {
@@ -7,7 +7,7 @@
 }
 
 window {
-  background: @color0;
+  background: @background;
 }
 
 #workspaces,
@@ -21,41 +21,51 @@ window {
   padding: 0 8px;
   margin-right: 8px;
 }
+
 #workspaces,
 #workspaces button {
   margin: 0;
   padding: 0;
   border-radius: 0;
+  background: transparent;
 }
+
 #workspaces button.focused {
-  color: @color7;
-  border-bottom: 2px solid @color7;
+  color: @tertiary_container;
+  border-bottom: 2px solid @tertiary_container;
 }
+
 #pulseaudio {
-  color: @color5;
-  border-bottom: 2px solid @color5;
+  color: @primary_container;
+  border-bottom: 2px solid @primary_container;
 }
+
 #network {
-  color: @color4;
-  border-bottom: 2px solid @color4;
+  color: @tertiary;
+  border-bottom: 2px solid @tertiary;
 }
+
 #cpu {
-  color: @color6;
-  border-bottom: 2px solid @color6;
+  color: @secondary_container;
+  border-bottom: 2px solid @secondary_container;
 }
+
 #memory {
-  color: @color2;
-  border-bottom: 2px solid @color2;
+  color: @primary;
+  border-bottom: 2px solid @primary;
 }
+
 #language {
-  color: @color3;
-  border-bottom: 2px solid @color3;
+  color: @secondary;
+  border-bottom: 2px solid @secondary;
 }
+
 #clock {
-  color: @color8;
-  border-bottom: 2px solid @color8;
+  color: @surface_variant;
+  border-bottom: 2px solid @surface_variant;
 }
+
 #custom-power {
-  color: @color1;
-  border-bottom: 2px solid @color1;
+  color: @error;
+  border-bottom: 2px solid @error;
 }

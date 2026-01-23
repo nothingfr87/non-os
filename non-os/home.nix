@@ -34,7 +34,6 @@
     fzf
     bat
     btop
-    pywal16
     imagemagick
     nwg-look
     pywalfox-native
@@ -45,6 +44,8 @@
     grim
     slurp
     sway-contrib.grimshot
+    nemo
+    yazi
   ];
 
   # Vesktop
@@ -128,7 +129,6 @@
       main = {
         font = "JetBrainsMono NF:size=12";
         pad = "10x10";
-        #include = "~/.cache/wal/colors-foot.ini"; # uncomment if you want to use pywal
       };
       colors = {
         foreground = "c0caf5";
@@ -166,9 +166,21 @@
   # GTK
   gtk = {
     enable = true;
+    theme = {
+      package = pkgs.tokyonight-gtk-theme;
+      name = "Tokyonight";
+    };
     iconTheme = {
       package = pkgs.papirus-icon-theme;
       name = "Papirus-Dark";
     };
+  };
+
+  home.pointerCursor = {
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Ice";
+    size = 24;
+    gtk.enable = true;
+    x11.enable = true;
   };
 }

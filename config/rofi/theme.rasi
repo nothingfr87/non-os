@@ -1,20 +1,12 @@
-// Uncomment the lines to use pywal
-
 @theme "/dev/null"
-/*@import "~/.cache/wal/colors-rofi-dark.rasi"*/
 
 * {
-  /*
-  bg: @background;
-  bg-alt: @selected-normal-background;
-  fg: @foreground;
-  fg-alt: @selected-normal-foreground;
-  */
-
   bg: #1a1b26;
   bg-alt: #414868;
   fg: #c0caf5;
   fg-alt: #9aa5ce;
+  error: #f7768e;
+  error-container: #8c4351;
   borderradius: 20px;
   borderradiuselement: 20px;
   buttonradius: 18px;
@@ -24,7 +16,6 @@
 
 window {
   width: 60%;
-  padding: 10px;
   border: 0;         
   transparency: "real";
   background-color: @bg;
@@ -46,8 +37,8 @@ textbox {
   enabled: true;
   padding: 0.4em 0.54em 0.4em 0.54em;
   str: "Not Found!";
-  text-color: #f7768e; 
-  background-color: @bg-alt; 
+  text-color: @error; 
+  background-color: @error-container; 
 }
 
 element {
