@@ -53,11 +53,11 @@
   };
 
   # Enable DBUS and Policy Kit
-  services.dbus.enable = true;
-  security.polkit.enable = true;
-  services.gnome.gnome-keyring.enable = true;
+  security.polkit.enable = true; # polkit
+  services.gnome.gnome-keyring.enable = true; # secret service
+  security.pam.services.swaylock = { };
 
-  # Install LightDM
+  # Install Ly
   services.displayManager.ly.enable = true;
 
   # Enable Sway Window Manager
@@ -81,6 +81,10 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+
+  # Enable Power Profiles services
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
 
   # Define the primary user account.
   users.users.nothing = {
@@ -121,6 +125,7 @@
     xclip
     wl-clipboard
     pavucontrol
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # Font Packages

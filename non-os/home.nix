@@ -29,14 +29,12 @@
     gimp
     obsidian
     fastfetch
-    picom
     neovim
     fzf
     bat
     btop
     imagemagick
     nwg-look
-    pywalfox-native
     foot
     rofi
     swaylock
@@ -46,6 +44,10 @@
     sway-contrib.grimshot
     nemo
     yazi
+    swaylock
+    mako
+    swayidle
+    swaybg
   ];
 
   # Vesktop
@@ -168,7 +170,7 @@
     enable = true;
     theme = {
       package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight";
+      name = "Tokyonight-Dark";
     };
     iconTheme = {
       package = pkgs.papirus-icon-theme;

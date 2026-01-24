@@ -9,6 +9,8 @@ NON-OS is my NixOS Configurations
 # Preview
 
 ![Preview](preview.png)
+![Preview](preview2.png)
+![Preview](preview3.png)
 
 ---
 
@@ -64,3 +66,7 @@ NON-OS is my NixOS Configurations
 <kbd>PrtScr</kbd> / <kbd>Print</kbd> -> Takes a screenshot
 
 ---
+
+## Noctalia
+
+you can either use waybar or noctalia shell, noctalia shell is active by default
