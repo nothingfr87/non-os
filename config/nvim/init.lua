@@ -62,4 +62,4 @@ local function transparent()
 end
 
 cmd("colorscheme tokyonight")
-transparent()
+--transparent()

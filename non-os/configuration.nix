@@ -63,7 +63,7 @@
   # Install GDM
   services.displayManager.gdm.enable = true;
 
-  # Enable Sway Window Manager
+  # Install Sway Window Manager
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;

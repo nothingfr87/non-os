@@ -50,7 +50,7 @@ NON-OS is my NixOS Configurations
 
 #### GTK
 - Bibata Cursors
-- Tokyonight theme
+- ADW GTK3 powered by noctalia-shell templates so it'll follow the wallpaper colors
 
 ---
 
@@ -63,6 +63,12 @@ NON-OS is my NixOS Configurations
 <kbd>Super + D</kbd> -> Runs Rofi 
 
 <kbd>PrtScr</kbd> / <kbd>Print</kbd> -> Takes a screenshot
+
+---
+
+## Future Plans
+
+I am planning on disabling the noctalia shell templates, and use matugen
 
 ---
 

@@ -51,6 +51,8 @@
     papirus-icon-theme
     tokyonight-gtk-theme
     bibata-cursors
+    adw-gtk3
+    adwaita-icon-theme
   ];
 
   # Firefox

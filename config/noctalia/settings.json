@@ -35,7 +35,7 @@
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0,
         "capsuleOpacity": 1,
         "density": "spacious",
         "exclusive": true,
@@ -50,8 +50,8 @@
         "screenOverrides": [
         ],
         "showCapsule": true,
-        "showOutline": true,
-        "useSeparateOpacity": true,
+        "showOutline": false,
+        "useSeparateOpacity": false,
         "widgets": {
             "center": [
                 {
@@ -190,7 +190,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "tonal-spot",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -481,6 +481,10 @@
             {
                 "enabled": true,
                 "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "yazi"
             }
         ],
         "enableUserTheming": false
@@ -488,7 +492,7 @@
     "ui": {
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
-        "boxBorderEnabled": false,
+        "boxBorderEnabled": true,
         "fontDefault": "JetBrainsMono NF",
         "fontDefaultScale": 0.9,
         "fontFixed": "JetBrainsMono NF",
@@ -526,7 +530,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "macos",
+        "wallhavenQuery": "",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
