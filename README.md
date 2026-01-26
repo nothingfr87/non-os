@@ -75,5 +75,3 @@ I am planning on disabling the noctalia shell templates, and use matugen
 ## Noctalia
 
 you can either use waybar, and rofi or noctalia shell, noctalia shell is active by default
-
-The default noctalia shell theme template is on, to turn it off, simply delete the lines that imports any external files, and uncomment the other lines
